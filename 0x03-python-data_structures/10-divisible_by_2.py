@@ -10,4 +10,4 @@ def divisible_by_2(my_list=[]):
             multiples_2_list.append(True)
         else:
             multiples_2_list.append(False)
-        return multiples_2_list
+    return multiples_2_list
