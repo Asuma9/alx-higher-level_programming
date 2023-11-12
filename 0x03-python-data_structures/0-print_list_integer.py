@@ -2,8 +2,7 @@
 # 0-print_list_integer.py
 
 
-
 def print_list_integer(my_list=[]):
-	"""prints all integers of my list"""
-	for element in range(len(my_list)):
-		print("{:d}".format(my_list[element]))
+    """prints all integers of my list"""
+        for element in range(len(my_list)):
+            print("{:d}".format(my_list[element]))
