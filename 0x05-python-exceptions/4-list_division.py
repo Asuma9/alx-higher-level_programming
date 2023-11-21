@@ -2,8 +2,20 @@
 
 
 def list_division(my_list_1, my_list_2, list_lenght):
-    divide_list = []
+    """ Divides elementwise between two list
 
+
+    Args:
+        my_list_1(list): the first list
+        my_list_2(list): the second list
+        list_lenght(int): number of elemnts to divide
+
+    Returns:
+        A new list of lenght list_lenght containg all the divisions
+
+    """
+
+    divide_list = []
     for element in range(0, list_lenght):
         try:
             quotient = my_list_1[element] / my_list_2[element]
@@ -18,4 +30,4 @@ def list_division(my_list_1, my_list_2, list_lenght):
             quotient = 0
         finally:
             divide_list.append(quotient)
-    return divide_list  
+    return divide_list
