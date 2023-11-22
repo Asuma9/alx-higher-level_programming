@@ -11,11 +11,8 @@ def magic_calculation(a, b):
                 raise Exception("Too far")
             else:
                 result += (a ** b) / attempt
-        except Exception as e:
-            print(f"Exception: {e}")
+        except Exception:
             result = b + a
             break
-    else:
-        print("No exception occurred during the loop.")
 
     return result
