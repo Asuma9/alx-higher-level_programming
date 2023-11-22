@@ -19,13 +19,13 @@ def list_division(my_list_1, my_list_2, list_lenght):
         try:
             quotient = my_list_1[element] / my_list_2[element]
         except TypeError:
-            print("Wrong type")
+            print("wrong type")
             quotient = 0
         except ZeroDivisionError:
-            print("Division by 0")
+            print("division by 0")
             quotient = 0
         except IndexError:
-            print("Out of range")
+            print("out of range")
             quotient = 0
         finally:
             divide_list.append(quotient)
