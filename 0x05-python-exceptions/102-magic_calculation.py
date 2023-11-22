@@ -3,9 +3,8 @@
 
 def magic_calculation(a, b):
     result = 0
-    max_attempts = 3
 
-    for attempt in range(0, max_attempts):
+    for attempt in range(0, 3):
         try:
             if (attempt > a):
                 raise Exception("Too far")
