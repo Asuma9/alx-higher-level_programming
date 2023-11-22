@@ -4,7 +4,6 @@
 def list_division(my_list_1, my_list_2, list_lenght):
     """ Divides elementwise between two list
 
-
     Args:
         my_list_1(list): the first list
         my_list_2(list): the second list
@@ -16,17 +15,17 @@ def list_division(my_list_1, my_list_2, list_lenght):
     """
 
     divide_list = []
-    for element in range(0, list_lenght):
+    for element in range(0, list_length):
         try:
             quotient = my_list_1[element] / my_list_2[element]
         except TypeError:
             print("Wrong type")
             quotient = 0
         except ZeroDivisionError:
-            print("division by 0")
+            print("Division by 0")
             quotient = 0
         except IndexError:
-            print("out of range")
+            print("Out of range")
             quotient = 0
         finally:
             divide_list.append(quotient)
