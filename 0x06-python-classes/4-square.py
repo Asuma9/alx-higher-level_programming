@@ -27,6 +27,6 @@ class Square:
         """Setter method for size with validation"""
         self.__size = value
         if not isinstance(value, int):
-            raise TypeError("size must be integer")
+            raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
