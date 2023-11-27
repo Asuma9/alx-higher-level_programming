@@ -24,12 +24,12 @@ class Square:
         """Setter method with size validation"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
 
-    def position(value, tuple):
+    def position(self, value):
         """setter method with position validation"""
         if not isinstance(value, tuple) or len(value) != 2 \
             or not all(isinstance(i, int) for i in value) \
@@ -47,7 +47,7 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for _ in range(self.__position[1]):
+            for _ in range(self.position[1]):
                 print()
             for _ in range(self.__size):
-                print(" " * self.__position[0] + "#" * self.__size)
+                print(" " * self.position[0] + "#" * self.__size)
