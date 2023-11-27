@@ -4,11 +4,11 @@
 
 class Square:
     """Defines a class square that defines a square"""
-    
+
     def __init__(self, size=0, position=(0, 0)):
         """Method to initialize the square object"""
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -39,9 +39,9 @@ class Square:
     def position(value, tuple):
         """setter method with position validation"""
         self.__position = value
-        if not isinstance(value, tuple) or len(value) != 2 \
-            or not all(isinstance(i, int) for i in value) \
-                or any(i < 0 for i in value):
+        if not isinstance(value, tuple) or if len(value) != 2 \
+            or if not all(isinstance(i, int) for i in value) \
+                or if any(i < 0 for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
