@@ -15,6 +15,7 @@ class Square:
         """Getter method to retrieve size"""
         return self.__size
 
+    @property
     def position(size):
         """Getter method to retrieve position"""
         return self.__position
@@ -29,6 +30,7 @@ class Square:
         else:
             self.__size = value
 
+    @position.setter
     def position(self, value):
         """setter method with position validation"""
         if not isinstance(value, tuple) or len(value) != 2 \
