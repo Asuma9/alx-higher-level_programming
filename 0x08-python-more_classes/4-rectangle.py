@@ -48,15 +48,23 @@ class Rectangle:
     def area(self):
         """Returns area of a Rectangle"""
         if width == 0 or height == 0:
-            return
+            return 0
         return (self.width * self.height)
 
     def __str__(self):
         """Method to print string"""
         if self.width == 0 or self.height == 0:
-            return
+            return ""
         else:
             return (f"{'#' * self.width}\n)" * self.height).strip("\n")
+
+        # string = ""
+        # if self.height == 0 or self.width == 0
+        # string += "\n"
+        # else
+        # for i in range(self.height):
+        # string += "#" * self.width + "\n"
+        # return string[:-1]
 
     def __repr__(self):
         """Method to return string represenation of obj Rectangle"""
