@@ -35,13 +35,13 @@ class Rectangle:
         allows manipulation"""
         self.__height = value
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         elif value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
 
     def perimeter(self):
         """Return perimeter of Rectangle object"""
-        if width == 0 or height == 0:
+        if self.width == 0 or self.height == 0:
             return
         return ((self.width + self.height) * 2)
 
@@ -56,7 +56,7 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return ""
         else:
-            return (f"{'#' * self.width}\n)" * self.height).strip("\n")
+            return (f"{'#' * self.width}\n" * self.__height).strip("\n")
 
         # string = ""
         # if self.height == 0 or self.width == 0
