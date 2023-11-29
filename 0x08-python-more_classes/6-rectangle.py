@@ -5,7 +5,7 @@
 class Rectangle:
     """Defines a rectangle"""
 
-    number_of_instances = 0 # class attribute
+    number_of_instances = 0   # class attribute
 
     def __init__(self, width=0, height=0):
         """MEthod to initialize object rectangle"""
