@@ -7,19 +7,20 @@ two methods as follows:
     1. method area: raises an exception
     2. integer_validator: validates if name is an int type
 
-Importation class
+Importation class:
 
     ">>>" BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 Documentation
 "============"
-This is where we verify if our modules and functions are well documented as required.
+This is where we verify if our modules and functions are well documented
+as required.
 __doc__ is used to verify the documentation of modules and fucntions:
 
     ">>>" module_doc = __import__("7-base_geometry").__doc__
     ">>>" print(len(module_doc) > 0)
     True
-    
+
     ">>>" class_doc = __import__("7-base_geometry").BaseGeometry.__doc__
     ">>>" print(len(class_doc) > 0)
     True
@@ -28,7 +29,8 @@ __doc__ is used to verify the documentation of modules and fucntions:
     ">>>" print(len(area_doc) > 0)
     True
 
-    ">>>" integer_validator_doc = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+    ">>>" integer_validator_doc = __import__("7-base_geometry").BaseGeometry.\
+        integer_validator.__doc__
     ">>>" print(len(integer_validator_doc) > 0)
     True
 
@@ -41,41 +43,42 @@ Testing calling area:
 
     ">>>" bg = BaseGeometry()
     ">>>" try:
-    ...    print(bg.area())
-    ... except Exception as e:
-    ...    print("[{}] {}".format(e.__class__.__name, e))
-    ...
+        ... print(bg.area())
+        ... except Exception as e:
+            ... print("[{}] {}".format(e.__class__.__name, e))
+        ...
     [Exception] area() is not implemented
 
 Testing method integer validator
 "================================"
 
-''integer_validator'' will check if type(value) is an integer, otherwise will raise an error
+''integer_validator'' will check if type(value) is an integer,
+otherwise will raise an error
 
-checking True cases: integer>0:
+checking True cases: integer > 0:
 
-   ">>>" bg = BaseGeometry()
-   ">>>" bg.integer_validator("my_int", 12)
-   ">>>"
+    ">>>" bg = BaseGeometry()
+    ">>>" bg.integer_validator("my_int", 12)
+    ">>>"
 
-   ">>>" bg = BaseGeometry()
-   ">>>" bg.integer_validator("width", 89)
-   True
+    ">>>" bg = BaseGeometry()
+    ">>>" bg.integer_validator("width", 89)
+    True
 
 Testing with an integer:
 
     ">>>" bg.integer_validator("name", "John")
-    Traceback (most recent call last):
-    TypeError: name must be an integer
+    Traceback(most recent call last):
+        TypeError: name must be an integer
 
 Testing with zero:
 
     ">>>" bg.integer_validator("age", 0)
-    Traceback (most recent call last):
-    ValueError: age must be greator than 0
+    Traceback(most recent call last):
+        ValueError: age must be greator than 0
 
 Testing with negative numbers:
 
     ">>>" bg.integer_validator("distance", -4)
-    Traceback (most recent call last):
-    ValueError: distance must be greator than 0
+    Traceback(most recent call last):
+        ValueError: distance must be greator than 0
