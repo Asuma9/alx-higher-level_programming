@@ -7,15 +7,15 @@ two methods as follows:
     1. method area: raises an exception
     2. integer_validator: validates if name is an int type
 
-Importation class:
+Importing class:
 
     ">>>" BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 Documentation
 "============"
 This is where we verify if our modules and functions are well documented
-as required.
-__doc__ is used to verify the documentation of modules and fucntions:
+as required.__doc__ is used to verify the documentation of modules and
+fucntions:
 
     ">>>" module_doc = __import__("7-base_geometry").__doc__
     ">>>" print(len(module_doc) > 0)
