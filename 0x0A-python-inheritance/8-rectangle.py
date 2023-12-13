@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Create parent class BaseGeometry and subclass Rectangle"""
 
 
 class BaseGeometry:
@@ -20,8 +21,8 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         """Instantiation of Rectangle obj attributes"""
 
-        super().__init__() # Call to constructor  of the parent class
+    # super().__init__() # Call to constructor  of the parent class
         self.__width = width
         self.__height = height
-        self.integer_validator("width", self.__width)
-        self.integer_validator("height", self.__height)
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
