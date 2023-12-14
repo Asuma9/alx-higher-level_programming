@@ -13,5 +13,4 @@ def add_attribute(obj, attr_name, attr_value):
         """Checks for dict attribute or its instance b4 adding sn attribute"""
         obj.__setattr__(attr_name, attr_value)
     else:
-        raise TypeError("can't add new attribute")
-    
+        raise TypeError("can't add new attribute")    
