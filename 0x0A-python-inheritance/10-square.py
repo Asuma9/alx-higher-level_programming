@@ -38,9 +38,9 @@ class Square(Rectangle):
     """Creates a square object"""
     def __init__(self, size):
         """Method to initiate object square"""
-        super().__init__(size, size)
         super().integer_validator("size", size)
-        self.__size = size
+        super().__init__(size, size)
+	self.__size = size
 
     def area(self):
         """Returns area"""
