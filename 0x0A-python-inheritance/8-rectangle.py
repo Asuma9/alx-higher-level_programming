@@ -2,7 +2,7 @@
 """Create parent class BaseGeometry and subclass Rectangle"""
 
 
-class BaseGeometry:
+class BaseGeometry():
     """Defines parent class BaseGeometry"""
     def area(self):
         """Yet to be implemented"""
