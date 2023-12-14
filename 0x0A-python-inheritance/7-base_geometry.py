@@ -2,7 +2,7 @@
 """Creates a class BaseGeometyr"""
 
 
-class BaseGeometry:
+class BaseGeometry():
     """Defines BaseGeometry class with integer validator"""
     def area(self):
         """To be used to return the area of a surface"""
