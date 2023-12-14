@@ -9,7 +9,7 @@ def add_attribute(obj, attr_name, attr_value):
     :param attr_value: value of the attribute.
     """
 
-    if hasattr(obj, "__dict__") is False:
+    if hasattr(obj, "__dict__") or isinstance(obj, dict):
         """Checks for dict attribute or its instance b4 adding sn attribute"""
         raise TypeError("Can't add new attribute")
     setattr(obj, attr_name, attr_value)
