@@ -42,10 +42,6 @@ class Square(Rectangle):
         super().__init__(size, size)
         self.__size = size
 
-    def area(self):
-        """Customize area method for the square"""
-        return self.__size * self.__size
-
     def __str__(self):
-        """Prints Square attributes"""
+        """overriding __str__ to print customized string rep for square"""
         return "[Square] {}/{}".format(self.__size, self.__size)
