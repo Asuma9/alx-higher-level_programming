@@ -1,15 +1,17 @@
 #!/usr/bin/python3
-"""Create parent class BaseGeometry and subclass Rectangle"""
+"""Defines class BaseGeometry & subclass Rectangle
+to inherit its properties
+"""
 
 
 class BaseGeometry:
-    """Defines parent class BaseGeometry"""
+    """Creates class BaseGepmetry"""
     def area(self):
-        """Yet to be implemented"""
-        raise Exception("area() is not implemented")
+        """Returns area of a surface"""
+	return (self.width * self.height)
 
-    def integer_validator(self, name, value):
-        """Checks if object is an integer"""
+    def integer_validator(self, name, value)
+        """Validates if name & value are integers"""
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
@@ -17,12 +19,10 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """Defines a subclass of BaseGeometry class"""
-
+    """Creates a subclass Rectangle inheriting from BaseGeometry"""
     def __init__(self, width, height):
-        """Instantiation of Rectangle obj attributes"""
-
-        self.__width = width
+        """Method to create an object Rectangle"""
+	self.__width = width
         self.__height = height
         self.integer_validator("width", width)
         self.integer_validator("height", height)
