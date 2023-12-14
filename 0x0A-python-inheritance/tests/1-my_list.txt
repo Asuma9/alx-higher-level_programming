@@ -67,7 +67,7 @@ Testing if the list is sorted:
     ">>>" my_list = MyList()
     ">>>" my_list.append(1)
     ">>>" my_list.append(4)
-    ">>>" my_list.aapend(2)
+    ">>>" my_list.append(2)
     ">>>" my_list.append(3)
     ">>>" my_list.aapend(5)
     ">>>" print(my_list)
@@ -83,7 +83,7 @@ Test case for negative numbers:
     ">>>" my_list.append(1)
     ">>>" my_list.append(2)
     ">>>" my_list.append(-2)
-    ">>>" my_list.aapend(-3)
+    ">>>" my_list.append(-3)
     ">>>" my_list.append(4)
     ">>>" print(my_list)
     [1, 2, -2, -3, 4]
