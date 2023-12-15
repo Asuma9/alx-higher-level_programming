@@ -56,7 +56,7 @@ class Square:
         """string representation of the square"""
         result = ""
         if self.size == 0:
-           result += "\n"
+            result += "\n"
         else:
             for _ in range(self.position[1]):
                 result += "\n"
