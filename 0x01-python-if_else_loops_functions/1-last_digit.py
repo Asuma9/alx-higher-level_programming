@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 import random
-"""Calling class random for use"""
 
 number = random.randint(-10000, 10000)
 
