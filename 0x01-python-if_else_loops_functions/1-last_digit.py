@@ -4,7 +4,7 @@ import random
 
 number = random.randint(-10000, 10000)
 
-print("Last digit of ", end=" ")
+print("Last digit of", end=" ")
 
 if (number % 10 > 5):
     print("{} is {} {}".format(number, number % 10, "and is greater than 5"))
