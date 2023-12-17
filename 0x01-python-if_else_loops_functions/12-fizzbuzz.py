@@ -3,7 +3,6 @@
 def fizzbuzz():
     """Function to print fizz, Buzz or fizzBuzz for multiples of 3&5"""
     for x in range(1, 101):
-        
         if x % 15 == 0:
             print("FizzBuzz", end=" ")
         elif x % 5 == 0:
