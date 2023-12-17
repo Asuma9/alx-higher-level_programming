@@ -10,4 +10,4 @@ def fizzbuzz():
         elif x % 3 == 0 and x % 5 == 0:
             print("fizzBuzz", end=" ")
         else:
-            print(x, end=" ")
+            print("{}".format(x), end=" ")
